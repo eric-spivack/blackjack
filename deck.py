@@ -7,7 +7,9 @@ class Deck:
         self.cards = []
         self.suits = ["clubs", "diamonds", "spades", "hearts"]
         self.values = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"]
-        self.indexes = []
+        self.values_map = {
+            "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "10": 10, "Jack": 10, "Queen": 10, "King": 10, "Ace": 1
+        }
         self.new_deck()
 
     def new_deck(self):
@@ -22,3 +24,6 @@ class Deck:
         card = random.choice(self.cards)
         self.cards.remove(card)
         return card
+
+    def score(self, cards):
+        return 0

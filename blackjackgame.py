@@ -1,14 +1,18 @@
+from player import Player
 from deck import Deck
 
 deck = Deck()
-print(deck.cards)
-print()
-print(len(deck.cards))
-print(deck.deal())
-print(deck.deal())
-print(deck.deal())
-print(deck.deal())
-print(deck.deal())
-print(len(deck.cards))
-print(deck.cards)
-print()
+player = Player('Eric', 0)
+dealer = Player('Karl', 0)
+
+player.hit(deck.deal())
+dealer.hit(deck.deal())
+
+print(player.hand)
+print(dealer.hand)
+
+player.hit(deck.deal())
+dealer.hit(deck.deal())
+
+print(player.hand)
+print(dealer.hand)
