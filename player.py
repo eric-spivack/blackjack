@@ -8,8 +8,8 @@ class Player:
     def hit(self, card):
         self.hand.append(card)
 
-    def hand_check(self):
-        score = self.score()
+    def hand_check(self, deck):
+        score = self.score(deck)
         fulcrum = 15
 
         if score >= fulcrum:

@@ -26,4 +26,8 @@ class Deck:
         return card
 
     def score(self, cards):
-        return 0
+        total = 0
+
+        for card in cards:
+            total += self.values_map[card.value]
+        return total
