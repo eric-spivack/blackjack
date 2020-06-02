@@ -19,3 +19,6 @@ class Player:
 
     def score(self, deck):
         return deck.score(self.hand)
+
+    def to_string(self):
+        return f'{self.__dict__}'
