@@ -6,19 +6,13 @@ class Player:
         self.hand = []
 
     def hit(self, card):
-        self.hand.append(card)
-
+        pass
+    
     def hand_check(self, deck):
-        score = self.score(deck)
-        fulcrum = 15
-
-        if score >= fulcrum:
-            return False
-
-        return True
+        pass
 
     def score(self, deck):
-        return deck.score(self.hand)
+        pass
 
     def to_string(self):
-        return f'{self.__dict__}'
+        return f''

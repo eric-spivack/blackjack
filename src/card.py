@@ -5,4 +5,5 @@ class Card:
         self.value = value
 
     def to_string(self):
-        return f'{self.__dict__}'
+        return f''
+        

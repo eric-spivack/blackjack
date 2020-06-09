@@ -13,21 +13,10 @@ class Deck:
         self.new_deck()
 
     def new_deck(self):
-        self.cards = []
-
-        for suit in self.suits:
-            for value in self.values:                
-                card = Card(suit, value)
-                self.cards.append(card)
+        pass
 
     def deal(self):
-        card = random.choice(self.cards)
-        self.cards.remove(card)
-        return card
+        pass
 
     def score(self, cards):
-        total = 0
-
-        for card in cards:
-            total += self.values_map[card.value]
-        return total
+        pass
