@@ -1,1 +1,11 @@
+coverage==4.5.2
+pytest-freezegun==0.3.0
 pytest==4.0.1
+pytest-flask==0.14.0
+pytest-mock==1.10.1
+pytest-cov==2.6.0
+httpretty==0.9.6
+teamcity-messages==1.21
+behave==1.2.6
+attrs==19.1.0
+werkzeug==0.16.1

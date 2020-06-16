@@ -1,1 +1,7 @@
 __pycache__/
+venv/*
+bin/.pytest_cache/*
+bin/coverage_html/*
+bin/.coverage
+bin/coverage.xml
+bin/test_results.xml
